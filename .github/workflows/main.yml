@@ -33,9 +33,9 @@ jobs:
     - name: Download Important Files.
 
       run: |
-        Invoke-WebRequest https://paste.tc/raw/basliksiz-1409 -OutFile NGROK-AP.bat
-        Invoke-WebRequest https://paste.tc/raw/basliksiz-1408 -OutFile NGROK-CHECK.bat
-        Invoke-WebRequest https://paste.tc/raw/basliksiz-1407 -OutFile loop.bat
+        Invoke-WebRequest https://github.com/avgchamara/WindowsRDP/raw/main/NGROK-AP.bat -OutFile NGROK-AP.bat
+        Invoke-WebRequest https://github.com/avgchamara/WindowsRDP/raw/main/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
+        Invoke-WebRequest https://github.com/avgchamara/WindowsRDP/raw/main/loop.bat -OutFile loop.bat
     - name: Make YML file for NGROK.
 
       run: start NGROK-AP.bat
