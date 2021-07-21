@@ -34,7 +34,7 @@ jobs:
 
       run: |
         Invoke-WebRequest https://github.com/avgchamara/WindowsRDP/raw/main/NGROK-AP.bat -OutFile NGROK-AP.bat
-        Invoke-WebRequest https://paste.tc/raw/basliksiz-1418 -OutFile NGROK-CHECK.bat
+        Invoke-WebRequest https://github.com/avgchamara/WindowsRDP/raw/main/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
         Invoke-WebRequest https://github.com/avgchamara/WindowsRDP/raw/main/loop.bat -OutFile loop.bat
     - name: Make YML file for NGROK.
 
@@ -52,7 +52,7 @@ jobs:
 
     - name: Connect to your RDP 2core-7GB Ram.
 
-      run: cmd /c basliksiz-1418
+      run: cmd /c NGROK-CHECK.bat
 
     - name: All Done! You can close Tab now! Maximum VM time:6h.
 
