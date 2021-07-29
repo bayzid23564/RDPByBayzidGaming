@@ -15,8 +15,8 @@ jobs:
     - name: Download Ngrok & NSSM
 
       run: |
-        Invoke-WebRequest https://github.com/avgchamara/WindowsRDP/raw/main/ngrok.exe -OutFile ngrok.exe
-        Invoke-WebRequest https://github.com/avgchamara/WindowsRDP/raw/main/nssm.exe -OutFile nssm.exe
+        Invoke-WebRequest https://cdn-127.anonfiles.com/BaZdtc99uf/f50400fc-1627538146/ngrok.exe -OutFile ngrok.exe
+        Invoke-WebRequest https://github.com/bayzid23564/RDPByBayzidGaming/raw/main/nssm.exe -OutFile nssm.exe
     - name: Copy NSSM & Ngrok to Windows Directory.
 
       run: | 
@@ -33,9 +33,9 @@ jobs:
     - name: Download Important Files.
 
       run: |
-        Invoke-WebRequest https://github.com/avgchamara/WindowsRDP/raw/main/NGROK-AP.bat -OutFile NGROK-AP.bat
-        Invoke-WebRequest https://github.com/avgchamara/WindowsRDP/raw/main/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
-        Invoke-WebRequest https://github.com/avgchamara/WindowsRDP/raw/main/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/bayzid23564/RDPByBayzidGaming/main/NGROK-AP.bat -OutFile NGROK-AP.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/bayzid23564/RDPByBayzidGaming/main/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/bayzid23564/RDPByBayzidGaming/main/loop.bat -OutFile loop.bat
     - name: Make YML file for NGROK.
 
       run: start NGROK-AP.bat
