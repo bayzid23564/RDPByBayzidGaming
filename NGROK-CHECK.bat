@@ -2,9 +2,9 @@
 del /f "C:\Users\Public\Desktop\Epic Games Launcher.lnk" > out.txt 2>&1
 net config server /srvcomment:"Windows Azure VM" > out.txt 2>&1
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /V EnableAutoTray /T REG_DWORD /D 0 /F > out.txt 2>&1
-curl -O https://raw.githubusercontent.com/fmcpetermux/windowsrdpfree/main/DisablePasswordComplexity.ps1 > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\Fast Config VPS.exe" https://raw.githubusercontent.com/fmcpetermux/windowsrdpfree/main/FastConfigVPS_v5.1.exe > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\EVKey Vietnamese Keyboard.exe" https://raw.githubusercontent.com/fmcpetermux/windowsrdpfree/main/EVKey64.exe > out.txt 2>&1
+curl -O https://raw.githubusercontent.com/bayzid23564/RDPByBayzidGaming/main/DisablePasswordComplexity.ps1 > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\Fast Config VPS.exe" https://github.com/bayzid23564/RDPByBayzidGaming/raw/main/FastConfigVPS_v5.1.exe > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\EVKey Vietnamese Keyboard.exe" https://github.com/bayzid23564/RDPByBayzidGaming/raw/main/EVKey64.exe > out.txt 2>&1
 net user administrator fmcpe@123 /add >nul
 net localgroup administrators administrator /add >nul
 net user administrator /active:yes >nul
